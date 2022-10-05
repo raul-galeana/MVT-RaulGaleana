@@ -2,16 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-
-    <p>Lista de sub familias para la fiesta de navidad:</p>
-    
-    {% for sub_famila in sub_familias %}
-        <li>{{sub_familia.apellidos}}{{sub_familia.asignacion}}</li>
+    <p>Lista de sub familias para la fiesta de navidad</p>
+    {% for sub_familia in sub_familias %}
+        <li>{{sub_familia.apellidos}} // {{sub_familia.asignacion}} // {{sub_familia.invitados}} // {{sub_familia.fecha_pago}}</li>
     {% endfor %}
     
 </body>
